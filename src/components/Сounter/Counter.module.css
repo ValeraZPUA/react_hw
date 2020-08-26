@@ -1,0 +1,9 @@
+.counterContainer {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  background-color: blanchedalmond;
+  flex-direction: column;
+}

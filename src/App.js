@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import UserCard from './components/UserCard';
+import Counter from './components/Сounter';
 
-function App() {
+const user = {
+  name: 'John',
+  lastName: 'Smith',
+  avatarLink:
+    'https://upload.wikimedia.org/wikipedia/ru/d/da/%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80_3.jpg',
+  comment: 'Some text about something',
+  commentDate: new Date(),
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <UserCard user={user} />
+      <Counter />
+    </>
   );
-}
+};
 
 export default App;
